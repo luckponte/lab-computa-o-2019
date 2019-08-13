@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float getDistance(int *point1, int *point2)
+double getDistance(int *point1, int *point2)
 {
 	return sqrt(pow((point2[0]-point1[0]),2) + pow((point2[1]-point1[1]),2));
 }
@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
 			k+=1;
 			int coordinates[51][2],numBalls,i=0,j=0,lesserDistanceIndex;;
 			scanf("%d",&numBalls);
-			float distances[51];
+			double distances[51];
 
 			while(i<=numBalls)
 			{
