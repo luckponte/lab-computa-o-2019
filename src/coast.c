@@ -3,7 +3,6 @@
 int main()
 {
 	int distance, fugSpeed, grdSpeed;
-	int i;
 
 	while(scanf("%d %d %d",&distance,&fugSpeed,&grdSpeed)!=EOF)
 	{
