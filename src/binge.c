@@ -2,11 +2,11 @@
 
 int main()
 {
-	int numSeasons, timeEpisode, episodes[100000];
+	int episodes;
+	float numSeasons,timeEpisode,i,j;
 	double totalTime;
-	int i,j;
 
-	while(scanf("%d %d",&numSeasons,&timeEpisode)!=EOF)
+	while(scanf("%f %f",&numSeasons,&timeEpisode)!=EOF)
 	{
 		if(numSeasons==-1 && timeEpisode==-1)
 			break;
@@ -16,13 +16,14 @@ int main()
 
 		for (i = 0; i < numSeasons; ++i)
 		{
-			fscanf(stdin,"%d",&episodes[i]);
-			totalTime += episodes[i]*j*timeEpisode;
+			scanf("%d",&episodes);
+			totalTime += episodes*j;
 
 			j -= 1;
+
+			printf("\n%f\n", numSeasons);
 		}
 
-		printf("%f\n", totalTime);
+		printf("%.0f\n", totalTime*timeEpisode);
 	}
-	return 0;
 }
